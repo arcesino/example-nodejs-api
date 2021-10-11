@@ -7,6 +7,8 @@ Basic example HTTP API powered by [NodeJS](https://nodejs.org/) & [ExpressJS](ht
 
 This is a dockerized application so all you need is to [install Docker](https://docs.docker.com/get-docker/) for your OS. There's no need to install NodeJS or PostgreSQL to run this API.
 
+For Linux systems, you must also [install Docker Compose](https://docs.docker.com/compose/install/#install-compose-on-linux-systems). This is not needed for MacOS and Windows.
+
 ### 1) Get the code
 
 This is a public repository that can be cloned using Git:
