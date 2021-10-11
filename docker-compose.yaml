@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=P@ssw0rd
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+
+  api:
+    build: .
+    restart: always
+    environment:
+      - PGHOST=db
+      - PGUSER=postgres
+      - PGPASSWORD=P@ssw0rd
+      - PGDATABASE=postgres
+    ports:
+      - 3000:3000

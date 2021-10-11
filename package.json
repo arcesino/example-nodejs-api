@@ -1,0 +1,21 @@
+{
+  "name": "example-nodejs-api",
+  "version": "1.0.0",
+  "description": "Example  HTTP API powered by ExpressJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "api",
+    "example"
+  ],
+  "author": "Ignacio Arces",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
+}
