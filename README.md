@@ -5,9 +5,20 @@ Basic example HTTP API powered by [NodeJS](https://nodejs.org/) & [ExpressJS](ht
 
 # Quick Start
 
-This is a dockerized application so all you need to do is to [install Docker](https://docs.docker.com/get-docker/) for your OS. There's no need to install NodeJS or PostgreSQL to run this API.
+This is a dockerized application so all you need is to [install Docker](https://docs.docker.com/get-docker/) for your OS. There's no need to install NodeJS or PostgreSQL to run this API.
 
-To run the API, open a terminal and from inside the directory where you cloned this repo run the following:
+### 1) Get the code
+
+This is a public repository that can be cloned using Git:
+```
+git clone https://github.com/arcesino/example-nodejs-api.git
+```
+
+If you have no experience with Git, you can also [download a ZIP](https://github.com/arcesino/example-nodejs-api/archive/refs/heads/main.zip) with the repo code.
+
+### 2) Run the API
+
+To run the API, open a terminal and from inside the directory where you cloned/downloaded the repo code run the following:
 
 For Linux & MacOS users:
 ```
@@ -19,12 +30,16 @@ For Windows:
 docker-compose up
 ```
 
-Commands above will create a couople Docker containers:
+Commands above will create a couple Docker containers:
 
 - db: the PostgreSQL server with a `products` table and some initial data. See [schema.sql](./db/schema.sql)
 - api: the Products API listening on port 3000
 
-To test the api you can open the following endpoints in your web browser:
+### 3) Test the API
+
+To test the api, open the following endpoints in your web browser:
 
 - List Products: http://localhost:3000/products
 - Get Product by Id: http://localhost:3000/products/1
+
+If everything is OK, you should see a JSON response with some products data.
